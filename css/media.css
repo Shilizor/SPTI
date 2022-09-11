@@ -1,0 +1,71 @@
+@media (max-width: 1680px){
+    .box1Callbtn {
+        left: 550px;
+    }
+    .box1Invite {
+        left: 860px;
+    }
+}
+
+@media (max-width: 1600px){
+    .box1Callbtn {
+        left: 510px;
+    }
+    .box1Invite {
+        left: 820px;
+    }
+    .box2-slider .prev {
+        right: 860px;
+      }
+}
+
+@media (max-width: 1600px){
+    .box1Callbtn {
+        left: 430px;
+    }
+    .box1Invite {
+        left: 735px;
+    }
+    .box2-slider .prev {
+        right: 860px;
+      }
+}
+
+@media (max-width: 1024px){
+    .box1Callbtn {
+        left: 230px;
+    }
+    .box1Invite {
+        left: 530px;
+    }
+    .box2-slider .prev {
+        right: 785px;
+      }
+      .box2-slider .next {
+        right: 100px;
+      }  
+      .box2-description {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #box2 {
+        height: 1350px;
+      }
+      .box4-container {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #box4 {
+        height: 950px;
+      }
+      .box5-map {
+        margin-left: 10px;
+        margin-right: 40px;
+      }
+      .footer {
+        font-size: 12px;
+      }
+}
