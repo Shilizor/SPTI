@@ -69,3 +69,92 @@
         font-size: 12px;
       }
 }
+
+@media (max-width: 768px){
+    .info-panel {
+        width: 900px;
+        font-size: 12px;
+    }
+    .img-address, .img-mail, .img-phone {
+        display: none;
+    }
+    .container {
+        width: 900px;
+    }
+    .menu {
+        font-size: 12px;
+    }
+    .logo {
+        width: 400px;
+    }
+    .info {
+        margin-right: 10px;
+    }
+    #box1{
+        width: 900px;
+    }
+    .box2-description p {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box1Header {
+        width: 900px;
+    }
+    .box1Callbtn {
+        left: 165px;
+    }
+    .box1Invite {
+        left: 470px;
+    }
+    .box2-slider .prev {
+        right: 710px;
+      }
+      .box2-slider .next {
+        right: 60px;
+      }  
+      .box2-description {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #box2 {
+        width: 400px;
+        height: 1370px;
+      }
+      .box4-container {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #box3 {
+        height: 1200px;
+      }
+      .box3-slider {
+        width: 900px;
+      }
+      #box4 {
+        width: 900px;
+        height: 880px;
+      }
+      #box5 {
+        width: 900px;
+        height: 800px;
+      }
+      .box5-map {
+        margin-left: 5px;
+        margin-right: 40px;
+        width: 400px;
+      }
+      .box5-info {
+        width: 400px;
+      }
+      .footer {
+        font-size: 10px;
+        width: 900px;
+      }
+      hr {
+        width: 900px;
+      }
+}
