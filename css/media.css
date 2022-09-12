@@ -158,3 +158,167 @@
         width: 900px;
       }
 }
+@media (max-width: 425px) {
+  .info {
+    display: none;
+  }
+  .info-name-company {
+    margin-left: 240px;
+    margin-top: 0;
+    top: 0;
+    width: 425px;
+    font-size: 20px;
+  }
+  .menu .name {
+    display: none;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .menu-list {
+    width: 800px;
+  }
+  .footer{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .info {
+    display: none;
+  }
+  .container{
+    max-width: 400px;
+  }
+  .info-panel{
+    width: 410px;
+  }
+  .info-name-company {
+    margin-left: 40px;
+    margin-top: 0;
+    top: 0;
+    width: 390px;
+    font-size: 16px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu .name {
+    display: none;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .menu-list {
+    width: 800px;
+  }
+  .footer{
+    font-size: 20px;
+  }
+  #box1, #box2, #box3, #box4, #box5 {
+    width: 410px;
+  }
+  #box2 {
+    height: 1900px;
+  }
+  #box3 {
+    height: 2100px;
+  }
+  #box4 {
+    height: 2000px;
+  }
+  #box5 {
+    height: 2000px;
+  }
+  .box5-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .box2-slider .prev {
+    right: 320px;
+  }
+  .box2-slider .next {
+    right: 0px;
+  }  
+  .box1Header {
+    width: 390px;
+    font-size: 48px;
+  }
+  .box2-header {
+    width: 390px;
+  }
+  .box2-description {
+    width: 390px;
+    margin-left: 0;
+  }
+  .box2-description p {
+    width: 400px;
+  }
+  .box1Callbtn{
+    width: 200px;
+    left: 5px;
+  }
+  .box1Invite {
+    width: 200px;
+    left: 210px;
+  }
+  .box2-slider {
+    width: 360px;
+    height: 300px;
+    margin-left: 25px;
+  }
+  .box2-slider .item {
+    width: 360px;
+    max-width: 360px;
+    height: 700px;
+    border: 1px #000 solid;
+}
+.slide-text {
+  position: absolute;
+  width: 360px;
+  height: 50px;
+  top: 651px;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slide-text p {
+  width: 360px;
+  font-size: 14px;
+  height: 50px;
+  margin-top: 15px;
+}
+.box3-header {
+  width: 390px;
+  margin-left: -20px;
+  font-size: 28px;
+}
+.box3-slider {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.box3-slider-item {
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  max-height: 120px;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr{
+  width: 390px;
+}
+  .footer {
+    width: 390px;
+  }
+}
