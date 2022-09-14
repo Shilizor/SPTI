@@ -327,9 +327,22 @@
     flex-wrap: wrap;
     margin-top: 60px;
   }
+  #box1 .box1-btn a {
+    font-size: 18px;
+  }
   .box1-call {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .monument{
+    position: absolute;
+    opacity: 0.7;
+    top: 62.5%;
+    left: 0%;
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    max-height: 380px;
   }
   #box2 {
     width: 100%;
