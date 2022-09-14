@@ -161,6 +161,7 @@ ul, li {
 }
 .monument{
   position: absolute;
+  opacity: 0.5;
   top: 36%;
   left: 60%;
   width: 100%;
