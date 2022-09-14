@@ -71,92 +71,198 @@
 }
 
 @media (max-width: 768px){
-    .info-panel {
-        width: 900px;
-        font-size: 12px;
-    }
-    .img-address, .img-mail, .img-phone {
+  .container{
+    width: 100%;
+    max-width: 768px;
+  }
+  .info-panel {
+    width: 100%;
+    max-width: 768px;
+    height: 40px;
+  }
+  .info-panel .info-name-company{
+    width: 100%;
+    max-width:  768px;
+    height: 16px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .info-panel .info {
+    display: none;
+  }
+  .img-address, .img-mail, .img-phone {
         display: none;
-    }
-    .container {
-        width: 900px;
-    }
-    .menu {
-        font-size: 12px;
-    }
-    .logo {
-        width: 400px;
-    }
+  }
+  .menu {
+    width: 100%;
+    max-width: 768px;
+    height: 65px;
+  }
+  .menu .logo{
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .menu .smallname, .menu .fullname {
+      display: none;
+  }
     .info {
         margin-right: 10px;
     }
     #box1{
-        width: 900px;
+        width: 100%;
+        max-width: 768px;
     }
-    .box2-description p {
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+    #box2 {
+      width: 100%;
+      max-width: 768px;
     }
-    .box1Header {
-        width: 900px;
+    #box2 .box2-header{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      font-size: 24px;
     }
-    .box1Callbtn {
-        left: 165px;
+    #box2 .box2-description {
+      width: 100%;
     }
-    .box1Invite {
-        left: 470px;
+    #box2 .box2-description p{
+      width: 90%;
+      height: 650px;
+      font-size: 16px;
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    .box2-slider .prev {
-        right: 710px;
-      }
-      .box2-slider .next {
-        right: 60px;
-      }  
-      .box2-description {
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      #box2 {
-        width: 400px;
-        height: 1370px;
-      }
-      .box4-container {
-        height: 700px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      #box3 {
-        height: 1200px;
-      }
-      .box3-slider {
-        width: 900px;
-      }
-      #box4 {
-        width: 900px;
-        height: 880px;
-      }
-      #box5 {
-        width: 900px;
-        height: 800px;
-      }
-      .box5-map {
-        margin-left: 5px;
-        margin-right: 40px;
-        width: 400px;
-      }
-      .box5-info {
-        width: 400px;
-      }
-      .footer {
-        font-size: 10px;
-        width: 900px;
-      }
-      hr {
-        width: 900px;
-      }
+    #box2 .box2-slider {
+      width: 100%;
+    }
+  
+    #box2 .box2-slider .item {
+      width: 450px;
+      height: 550px;
+    }
+    #box2 .box2-slider .item .slide-text {
+      width: 100%;
+      max-width: 450px;
+      top: 500px;
+    }
+    #box2 .box2-slider .item .slide-text p {
+      width: 100%;
+      font-size: 12px;
+    }
+    #box2 .box2-slider .item img{
+      width: 450px;
+      height: 550px;
+    }
+    #box2 .box2-slider .prev{
+      top: 50%;
+      right: 87%;
+    }
+    #box2 .box2-slider .next{
+      top: 50%;
+      right: 1%;
+    }
+  
+    #box3 {
+      width: 100%;
+      max-width: 768px;
+      height: 1300px;
+    }
+  
+    #box3 .box3-header {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    #box3 .box3-slider {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #box3 .box3-slider .box3-slider-item {
+      width: 303px;
+      height: 100px;
+      background-color: #d9d9d9;
+      margin-left: 20px;
+    }
+    #box3 .box3-slider .box3-slider-item img {
+      width: 300px;
+      height: 100px;
+      object-fit: contain;
+    }
+  
+    #box4 {
+      width: 100%;
+      max-width: 768px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 900px;
+    }
+
+    #box4 .box4-container {
+      width: 90%;
+      height: 800px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #box4 .box4-services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    #box4 .box4-header {
+      width: 100%;
+      text-align: center;
+    }
+
+  
+    #box5 {
+      width: 100%;
+      max-width: 768px;
+      height: 1300px;
+    }
+  
+    #box5 .container .box5-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #box5 .container .box5-container .box5-map-600 {
+      width: 100%;
+      margin: auto;
+    }
+
+    #box5 .container .box5-container .box5-info {
+      width: 96%;
+      height: 1000px;
+      margin-top: 25px;
+    }
+    #box5 .container .box5-container .box5-info p {
+      width: 96%;
+      height: 400px;
+    }
+    hr {
+      width: 100%;
+      max-width: 768px;
+    }
+    .footer {
+      width: 100%;
+      max-width: 768px;
+    }
+
 }
 
 @media (max-width: 420px) {
@@ -228,7 +334,7 @@
   #box2 {
     width: 100%;
     max-width: 420px;
-    height: 1100px;
+    height: 1200px;
   }
 
   #box2 .box2-header{
@@ -242,7 +348,7 @@
   }
   #box2 .box2-description p{
     width: 90%;
-    height: 650px;
+    height: 750px;
     font-size: 12px;
     margin-left: 5%;
     margin-right: 5%;
@@ -293,12 +399,15 @@
   #box3 .box3-slider {
     width: 100%;
     align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   #box3 .box3-slider .box3-slider-item {
     width: 303px;
     height: 100px;
     background-color: #d9d9d9;
+    margin-left: 20px;
   }
   #box3 .box3-slider .box3-slider-item img {
     width: 300px;
@@ -309,22 +418,36 @@
   #box4 {
     width: 100%;
     max-width: 420px;
-    height: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    height: 1650px;
   }
 
+  #box4 .box4-container {
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #box4 .box4-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
   #box4 .box4-header {
     width: 100%;
     text-align: center;
   }
 
-  .box4-container .box4-services:not(:last-child) {
-    margin-right: 0px;
-  }
-
   #box5 {
     width: 100%;
     max-width: 420px;
-    height: 1200px;
+    height: 1300px;
   }
 
   #box5 .container .box5-container {
@@ -347,6 +470,7 @@
   }
   #box5 .container .box5-container .box5-info {
     width: 96%;
+    height: 1300px;
   }
   hr {
     width: 100%;
