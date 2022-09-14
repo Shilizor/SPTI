@@ -162,7 +162,7 @@ ul, li {
 .monument{
   position: absolute;
   opacity: 0.6;
-  top: 40%;
+  top: 370px;
   left: 60%;
   width: 100%;
   max-width: 800px;
@@ -228,9 +228,13 @@ ul, li {
   border-radius: 15px;
 }
 #box2 {
+  position: relative;
   width: 100%;
   padding-top: 25px;
   height: 1300px;
+  background: url(/img/pf_C1u8mW.jpg) no-repeat;
+  background-size: contain;
+  color: #000;
 }
 .box2-header {
   width: 100%;
@@ -248,7 +252,7 @@ ul, li {
   position: relative;
   margin: auto;
   height: 300px;
-  margin-top: 45px;
+  margin-top: 85px;
   margin-bottom: 15px;
 }
 .box2-slider .item {
