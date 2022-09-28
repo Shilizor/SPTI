@@ -1356,6 +1356,13 @@ a:hover {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 576px) {
+  .partners_header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
 
 #box4 {
   position: relative;
@@ -1465,8 +1472,6 @@ a:hover {
     margin-bottom: 20px;
   }
   #box4 .box4-header {
-    margin: 0;
-    padding: 0;
     width: 100%;
     text-align: center;
   }
@@ -1500,7 +1505,7 @@ a:hover {
 .box4-header {
   position: absolute;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 20px;
   max-width: 1050px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1515,13 +1520,13 @@ a:hover {
   font-size: 32px;
   color: #fff;
 }
-@media (max-width: 321px) {
+@media (max-width: 576px) {
   .box4-header {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 23px;
     width: 90%;
-    max-width: 300px;
+    max-width: 500px;
   }
 }
 
