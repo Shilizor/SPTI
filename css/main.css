@@ -363,10 +363,21 @@ a:hover {
 }
 
 .graph-modal__container {
-  min-height: 450px;
+  min-height: 250px;
   max-height: 550px;
+  height: 100%;
   margin: auto;
   width: 500px;
+}
+@media (max-width: 768px) {
+  .graph-modal__container {
+    margin: 25px;
+  }
+}
+@media (max-width: 768px) and (max-height: 500px) {
+  .graph-modal__container {
+    max-height: 400px;
+  }
 }
 @media (max-width: 576px) {
   .graph-modal__container {
@@ -541,6 +552,12 @@ a:hover {
   max-height: 350px;
   margin: 0;
 }
+@media (max-width: 768px) and (max-height: 500px) {
+  .modal-body-text {
+    max-height: 200px;
+    height: 400px;
+  }
+}
 @media (max-width: 321px) {
   .modal-body-text {
     max-height: 300px;
@@ -550,7 +567,7 @@ a:hover {
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 768px) {
   .simplebar-track {
     display: none;
   }
@@ -1476,6 +1493,7 @@ a:hover {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
+    margin-bottom: 20px;
   }
   #box4 .box4-header {
     width: 100%;
