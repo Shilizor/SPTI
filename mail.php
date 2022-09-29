@@ -5,21 +5,20 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 $title = "Тема письма";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$text = $_POST['text'];
 $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
-foreach ( $_POST as $key => $value ) {
-  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
-    $body .= "
-    " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-      <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-      <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-    </tr>
-    ";
-  }
-}
+$title = "Заявка";
+$body = "
+<h2>Новая заявка</h2>
+<b>Имя:</b> $name<br>
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$text
+";
 
 $body = "<table style='width: 100%;'>$body</table>";
 
@@ -32,16 +31,16 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = ''; // Логин на почте
-  $mail->Password   = ''; // Пароль на почте
+  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'Shilizor@yandex.ru'; // Логин на почте
+  $mail->Password   = 'qwfhmntthqjdpixf'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom($email, $name); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('');
+  $mail->addAddress('Shilizor@yandex.ru');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {

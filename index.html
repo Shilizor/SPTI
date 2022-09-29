@@ -78,18 +78,16 @@
 
     <main class="main">
       <section id="box1" class="hero" style="background-image: url(img/ouhr61u2NLs.jpg);">
-
   <p class="hero_Header">ВМЕСТЕ МЫ<br>ДОСТИГАЕМ ЦЕЛИ</p>
-
   <div class="hero_btn">
       <button class="btn-reset hero_btn_element" data-graph-path="exampleCall">Связаться с нами</button>
       <button class="btn-reset hero_btn_element" data-graph-path="exampleTander">Пригласить на тендер</button>
   </div>
-  <picture>
+  <!-- <picture>
     <source srcset="img/Rectangle 32.avif" type="image/avif">
     <source srcset="img/Rectangle 32.webp" type="image/webp">
-    <!-- <img loading="lazy" src="img/Rectangle 32.png" class="image" width="600" height="600" alt=""> -->
-  </picture>
+    <img loading="lazy" src="img/Rectangle 32.png" class="image" width="633" height="600" alt="">
+  </picture> -->
   <div class="hero_overlay"></div>
 
 </section>
@@ -123,7 +121,7 @@
   <div class="slider__wrapper">
     <div class="slider__items">
       <div class="slider__item">
-        <img src="img/Matveev_A-1.jpg" alt="" class="slider__item_img">
+        <a href=""><img src="img/Matveev_A-1.jpg" alt="" class="slider__item_img"></a>
       </div>
       <div class="slider__item">
         <img src="img/Vakhrushev_E-1.jpg" alt="" class="slider__item_img">
@@ -328,10 +326,18 @@
         <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
       </div>
       <div class="popup-body">
-        <input class="input-reset" type="text" placeholder="Ваше имя" />
-        <input class="input-reset" type="email" placeholder="Ваш E-mail" />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-        <button class="popup-body_accept_btn">Отправить заявку</button>
+        <form action="#" class="form_call">
+          <label class="form__label">
+            <input type="text" name="name" class="input-reset form__input input-name" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="email" name="email" class="input-reset form__input input-email" placeholder="E-mail">
+          </label>
+          <label class="form__label">
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+          </label>
+          <button class="btn-reset form__btn popup-body_accept_btn">Отправить заявку</button>
+        </form>
       </div>
       <div class="popup-footer">
         <div class="contacs">
@@ -349,15 +355,23 @@
     <div class="graph-modal__content">
       <div class="popup-header">
         <h5 class="popup-title" id="exampleCallLabel">
-          Оставить приглашение на тендер
+          Оставить приглашение для тендера
         </h5>
         <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
       </div>
       <div class="popup-body">
-        <input class="input-reset" type="text" placeholder="Ваше имя" />
-        <input class="input-reset" type="email" placeholder="Ваш E-mail" />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-        <button class="popup-body_accept_btn">Отправить заявку</button>
+        <form action="#" class="form_tander">
+          <label class="form__label">
+            <input type="text" name="name" class="input-reset form__input input-name" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="email" name="email" class="input-reset form__input input-email" placeholder="E-mail">
+          </label>
+          <label class="form__label">
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+          </label>
+          <button class="btn-reset form__btn popup-body_accept_btn">Отправить заявку</button>
+        </form>
       </div>
       <div class="popup-footer">
         <div class="contacs">
@@ -369,6 +383,7 @@
         </h5>
       </div>
     </div>
+  </div>
   </div>
 
   <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="services_1">
@@ -570,6 +585,7 @@
       </div>
     </div>
   </div>
+
 
 </div>
 

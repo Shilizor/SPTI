@@ -775,6 +775,11 @@ a:hover {
     width: 100%;
   }
 }
+.hero picture {
+  position: absolute;
+  width: 633px;
+  height: 600px;
+}
 .hero_Header {
   position: relative;
   z-index: 1;
