@@ -13,6 +13,13 @@
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.sticky.js"></script>
+  <script>
+    $(window).load(function(){
+      $("#navbar").sticky({ topSpacing: 0, className: 'sticky infomenu_scrolled', wrapperClassName: 'my-wrapper' });
+    });
+  </script>
   <script defer src="js/main.js"></script>
 </head>
 

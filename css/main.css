@@ -696,21 +696,13 @@ a:hover {
   }
 }
 .infomenu_scrolled {
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 0;
   z-index: 600;
   background-color: #d9d9d9;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
   height: 70px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 .infomenu_scrolled .infomenu__container {
   height: 50px;
@@ -721,10 +713,16 @@ a:hover {
 }
 .infomenu_scrolled .infomenu_logo {
   height: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .infomenu_scrolled .infomenu_logo img {
   height: 50px;
   width: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav {
@@ -825,6 +823,7 @@ a:hover {
 .hero {
   position: relative;
   height: 100vh;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
