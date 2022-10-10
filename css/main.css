@@ -404,6 +404,11 @@ a:hover {
   }
 }
 
+.graph-modal__container_info {
+  width: 800px;
+  max-height: 750px;
+}
+
 .popup {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -437,6 +442,9 @@ a:hover {
   padding-top: 15px;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
+}
+.popup-body_info {
+  height: 600px;
 }
 .popup-body .simplebar-placeholder {
   display: none;
@@ -510,6 +518,7 @@ a:hover {
 }
 .popup .popup-footer {
   display: inline-block;
+  width: 100%;
 }
 @media (max-width: 576px) {
   .popup .popup-footer {
@@ -572,6 +581,23 @@ a:hover {
     display: none;
   }
 }
+.modal-body-text_info {
+  max-height: 550px;
+}
+
+.modal-body-text li {
+  margin: 0;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 321px) {
+  .modal-body-text li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .modal-body-text p {
   margin: 0;
   text-align: left;
