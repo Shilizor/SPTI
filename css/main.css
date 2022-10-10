@@ -1437,9 +1437,19 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1100px) {
+  .slider-feedback {
+    height: 900px;
+  }
+}
+@media (max-width: 968px) {
+  .slider-feedback {
+    height: 900px;
+  }
+}
 @media (max-width: 576px) {
   .slider-feedback {
-    height: 1000px;
+    height: 400px;
   }
 }
 
@@ -1456,7 +1466,7 @@ a:hover {
 }
 @media (max-width: 968px) {
   .slider-feedback .slider__wrapper {
-    height: 700px;
+    height: 750px;
   }
 }
 @media (max-width: 576px) {
@@ -1499,7 +1509,7 @@ a:hover {
 }
 @media (max-width: 968px) {
   .slider-feedback .slider__item {
-    height: 600px;
+    height: 750px;
   }
 }
 
@@ -1511,6 +1521,11 @@ a:hover {
   -o-object-fit: contain;
   object-fit: contain;
   border: #000 1px solid;
+}
+@media (max-width: 768px) {
+  .slider-feedback .slider__item_img {
+    width: 500px;
+  }
 }
 @media (max-width: 576px) {
   .slider-feedback .slider__item_img {
